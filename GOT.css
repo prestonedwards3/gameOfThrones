@@ -1,0 +1,58 @@
+html, body {
+    margin: 0;
+    height: 100%;
+ }
+ 
+body {
+    background-image: url("images/ship.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100%;
+    position: sticky;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    overflow: scroll;
+}
+h1{
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 50px;
+}
+h2 {
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+}
+
+#characterSelect{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 210px;
+    left: 273px;
+}
+
+img.characters {
+    height:135px;
+    width: 135px;
+    
+}
+.wrap {
+    background-color: rgba(2, 3, 10, 0.925);
+    text-align: center;
+    width: 170px;
+    padding:10px;
+    margin: 0px;
+    color: white;
+    border: 3px solid rgb(44, 32, 201);
+    display: block;
+}
+.options:hover{
+    border: 3px solid rgb(8, 97, 30);
+}
+.enemyOptions:hover {
+    border: 3px solid rgb(211, 14, 14);
+}

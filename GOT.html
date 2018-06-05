@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="GOT.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <h1>Game Of Thrones RPG</h1>
+            <h2>Chose your Character</h2>
+            <div class="row" id="characterSelect">
+                    <div class="col-xs-6 col-md-3">
+                         
+                        <div class="wrap options" id="jon"> <p>Jon Snow</p> 
+                        <img src="images/jon.jpg" class="characters"> 
+                        <p class="health">140</p> </div>
+                        
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        
+                        <div class="wrap options" id="arya"> <p>Arya Stark</p> 
+                        <img src="images/arya.jpg" class="characters"> 
+                         <p class="health">120</p> </div>
+                        
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                       
+                            <div class="wrap options" id="dany"> <p>Danaerys Targaryen</p> 
+                            <img src="images/danaerys.jpg" class="characters"> 
+                            
+                             <p class="health">100</p> </div>
+                        
+                    </div>
+                    <div class="col-xs-6 col-md-3" >
+                      
+                            <div class="wrap options" id="nightKing"> <p>The Night King</p>
+                            <img src="images/night.jpg" class="characters"> 
+                             <p class="health">160</p> </div>
+                                       
+                  </div>
+    </div>
+    <p id="gameCast1"></p>
+    <p id="gameCast"></p>
+    
+<div id="fightSection" class="row">
+
+    <div class="col-lg-5 user"></div>
+    <div class="col-lg-2"><button id="attack">Attack</button></div>
+    <div class="col-lg-5 enemy"></div>
+</div>
+<div class="row">
+   
+    <div class="col-lg-12" id="rest"></div>
+    
+</div>
+</div>
+ <script src="GOT.js"></script>   
+</body>
+</html>
