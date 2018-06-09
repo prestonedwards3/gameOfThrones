@@ -73,6 +73,7 @@ var nightKing = {
         //change remaining character options border red
         //on click set clicked character to defender
         $(".enemyOptions").on("click", function(enemyCharacter){
+            console.log("This is the start Player has this person as the new defender: ",defender)
             $(this).addClass("activeEnemy");
             $(this).removeClass("activeCharacter");
             $(this).css("border", "3px solid rgb(211, 14, 14)");
@@ -134,7 +135,9 @@ var nightKing = {
 
 
         }
-        $("#attack").on("click", function(){
+
+        console.log("This is the end Player has this person as the new defender: ",defender)
+        $("#attack").off().on("click", function(){
           
             console.log(attacker.hp);
             console.log(defender.hp);
@@ -144,7 +147,7 @@ var nightKing = {
                     attacker.ap = attacker.ap + attacker.base; 
                     $("#gameCast1").text("You attacked "+ defender.name+ " for "+attacker.ap+" damage!");
                     $("#gameCast").text(" "+ defender.name+ " attacked you back for "+ defender.cap +" damage!");
-                    console.log(attacker);
+                    console.log(attacker.ap);
                     console.log(defender);
                     $("#jon").children(".health").html(jon.hp);
                     $("#arya").children(".health").html(arya.hp);
@@ -152,13 +155,20 @@ var nightKing = {
                     $("#nightKing").children(".health").html(nightKing.hp);
                        
             } 
-                else if (defender.hp <= 0 && attacker.hp > 0){
+            if (defender.hp <= 0 && attacker.hp > 0){
                     
                     $(".activeEnemy").remove()
-                    
+                    // check if there are opponents left
+                    // if there are
+                        // let the player pick a new opponent
+                        // run the fight again
+                    // else
+                        // the player won the game
             }
             else  (attacker.hp <= 0); {
-                
+                // if the player hp is less than 0
+                    // Player loses
+                    // ask if they want to play again
             
             };
          
